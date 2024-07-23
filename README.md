@@ -10,3 +10,6 @@ By default, translate any language to Russian, setup your language in the **work
 Tested on:
 - Alfred 5
 - Python 3
+
+
+based on this, i add one function to pronounce the word
