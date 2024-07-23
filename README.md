@@ -1,5 +1,5 @@
 # Alfred workflow to translate texts
-based on this, i add one function to pronounce the word
+Based on this, I add one function to pronounce the English word at the same time!
 ## Usage
 Translate words or sentences to another language via the `t` keyword.
 ![preview](images/preview.png)
