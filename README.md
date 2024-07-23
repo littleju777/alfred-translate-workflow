@@ -5,8 +5,8 @@ Based on their workflow, I added one function to pronounce the English word at t
 
 ## Usage
 Translate words or sentences to another language via the `t` keyword.
-<img width="561" alt="image" src="https://github.com/user-attachments/assets/53eac765-07bd-4a23-a310-655dde32df18">
-<img width="557" alt="image" src="https://github.com/user-attachments/assets/a51621c7-c073-47ac-99c4-a27195a4ece2">
+<img width="559" alt="image" src="https://github.com/user-attachments/assets/997db8da-c183-4778-bf90-6facb93438f5">
+<img width="559" alt="image" src="https://github.com/user-attachments/assets/3e7c92f1-638e-43b5-b7fe-62ad0730d326">
 
 
 ↩: Copy translate to the clipboard and only pronounce the English not Chinese. 
