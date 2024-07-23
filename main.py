@@ -203,28 +203,35 @@ class Translate:
         return self._parse_response(self._get_request(text))
 
 
-def generate_worflow_output(translations: List[str]):
-    return json.dumps({
-        "items": [
-            {
-                "title": translation,
-                "subtitle": "",
-                "arg": translation,
-            }
-            for translation in translations
-        ]
-    }, ensure_ascii=False)
+def generate_workflow_output(translations, original_text):
+    items = [
+        {
+            "title": translation,
+            "subtitle": "",
+            "arg": translation,
+        }
+        for translation in translations
+    ]
+    items.insert(0, {
+        "title": original_text,
+        "subtitle": "Pronunciation",
+        "arg": original_text,
+    })
+    return json.dumps({"items": items}, ensure_ascii=False)
 
 
 if __name__ == "__main__":
     text_list = sys.argv[1:]
-    out_lang = os.environ["output_language"]
-    in_lang = os.environ["input_language"]
+    original_text = ' '.join(text_list)
+    out_lang = os.getenv("output_language", "zh-CN")
+    in_lang = os.getenv("input_language", "en")
 
-    recognised_lang, translate = Translate(
-        out_lang).get_translation(' '.join(text_list))
-    if recognised_lang == out_lang:
-        _, translate = Translate(
-            in_lang).get_translation(' '.join(text_list))
+    try:
+        recognised_lang, translate = Translate(out_lang).get_translation(original_text)
+        if recognised_lang == out_lang:
+            _, translate = Translate(in_lang).get_translation(original_text)
+        output = generate_workflow_output(translate, original_text)
+    except Exception as e:
+        output = json.dumps({"items": [{"title": str(e), "subtitle": "Error", "arg": ""}]})
 
-    print(generate_worflow_output(translate))
+    print(output)
