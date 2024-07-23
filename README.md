@@ -1,4 +1,5 @@
 # Alfred workflow to translate texts
+based on this, i add one function to pronounce the word
 ## Usage
 Translate words or sentences to another language via the `t` keyword.
 ![preview](images/preview.png)
@@ -12,4 +13,4 @@ Tested on:
 - Python 3
 
 
-based on this, i add one function to pronounce the word
+
