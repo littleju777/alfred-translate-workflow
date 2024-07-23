@@ -1,6 +1,6 @@
 # Alfred workflow to translate and pronounce texts
 Based on their workflow, I added one function to pronounce the English word at the same time.
-<img width="632" alt="image" src="https://github.com/user-attachments/assets/949e86b4-6bb3-4d5a-b95e-c0ca67e76f34">
+<img width="618" alt="image" src="https://github.com/user-attachments/assets/52c2ac57-ed5a-4071-b4b4-9ed016b4a6be">
 
 
 ## Usage
