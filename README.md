@@ -1,7 +1,10 @@
 # Alfred workflow to translate and pronounce texts
+forked from meshchaninov/alfred-translate-workflow
 Based on their workflow, I added one function to pronounce the English word at the same time.
 <img width="618" alt="image" src="https://github.com/user-attachments/assets/52c2ac57-ed5a-4071-b4b4-9ed016b4a6be">
 
+## install
+download the workflow from the release. 
 
 ## Usage
 Translate words or sentences to another language via the `t` keyword.
