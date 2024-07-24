@@ -5,7 +5,7 @@ Based on the workflow, I added one function to pronounce the English word at the
 
 <img width="618" alt="image" src="https://github.com/user-attachments/assets/52c2ac57-ed5a-4071-b4b4-9ed016b4a6be">
 
-## install
+## Install
 download the workflow from the release. 
 
 ## Usage
